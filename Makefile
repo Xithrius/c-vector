@@ -1,5 +1,6 @@
 CC=gcc
 STD=c11
+CFLAGS=-Wall -Wextra -Werror -O2 -std=$(STD) -pedantic
 
 bin/%.o: */%.c
 	$(CC) $< $(CFLAGS) -o $@
